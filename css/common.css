@@ -1,0 +1,292 @@
+/* 重置样式 reset style  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 公共样式  common style */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* 水平居中 */
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+/* 清除浮动 */
+.clear{
+    clear: both;
+}
+
+/* 高度塌陷 */
+.clearboth::after {
+    content: '';
+    clear: both;
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+
+/* 弹性布局 */
+.flexbox {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/* 标题文本 */
+.column-title{
+    margin: 40px 0;
+}
+
+/* 主标题 */
+.column-title h2{
+    text-align: center;
+}
+
+
+/* 副标题  */
+.column-title h3{
+    padding-left: 10px;
+    border-left: 8px solid #0281E8;
+    text-align: left;
+}
+
+/* 区域文本默认设置 */
+.column-text p{
+    text-indent: 2em;
+    line-height: 30px;
+}
+
+/* 区域图片默认修改  */
+.column-img{
+    overflow: hidden;
+}
+
+.column-img img{
+    vertical-align: top;
+}
+
+/* 当前导航 */
+.current-nav{
+    color: #fff !important;
+    font-size: 20px !important;
+    background-color: #09d2fe !important;
+    border-bottom: 2px solid #ffee34 !important;
+}
+
+/* header  */
+#header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.087);
+}
+
+/* 顶部 */
+.top{
+    background-color: #09d2fe;
+}
+
+.loginbar li{
+    float: right;
+    height: 35px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 35px;
+}
+
+.loginbar li:first-child{
+    float: left;
+    font-weight: 900;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.loginbar li:first-child span{
+    color: #ffee34;
+}
+
+.loginbar li a:hover{
+    text-decoration: underline;
+}
+
+.loginbar li:first-child a:hover{
+    text-decoration: none;
+}
+
+/* banner start */
+.banner-wrapper {
+    height: 520px;
+    color: #fff;
+    background: url(../images/banner1.jpg) no-repeat center/cover;
+}
+
+.child-banner{
+    height: 420px;
+    background: url(../images/banner1.jpg) no-repeat center/cover;
+}
+/* 导航区 */
+.nav {
+    background-color: #fff;
+}
+
+.nav li{
+    width: 14.2%;
+    height: 60px;
+    float: left;
+    text-align: center;
+}
+
+.nav li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.nav li a:hover {
+   text-decoration: underline;
+   color: #fff;
+   background-color:#09d2fe;
+}
+
+/* 底部版权声明 */
+.copyright {
+    height: 60px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 60px;
+    background-color:#09d2fe;
+    color: #fff;
+}
+
+/* 首页 */
+.column-one-content{
+    color: #fff;
+    background-color: #57E0FF;
+    background: url(../images/bg.png) no-repeat center bottom/cover;
+    background-attachment: fixed;
+}
+
+.cilumn-one-img img{
+    width: 100%;
+}
+
+.column-one-text{
+    padding: 20px 40px;
+}
+
+.column-two{
+    height: 250px;
+}
+
+.column-two-card{
+    width: 15%;
+    height: 180px;
+    margin-right: 24px;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.153);
+    transition: all .3s linear;
+}
+
+.column-two-card:last-child{
+    margin: 0;
+}
+
+.column-two-card h2{
+    padding-top: 50px;
+    font-size: 42px;
+    color: #09d2fe;
+    transition: all .3s linear;
+}
+
+.column-two-card h3{
+    color: #006176;
+    margin-bottom: 5px;
+}
+
+.column-two-card p{
+    display: none;
+    padding: 5px;
+    color: #fff;
+}
+
+/* 卡片鼠标滑动效果 */
+.column-two-card:hover{
+    height: 200px;
+    background-color:#09d2fe;
+}
+
+.column-two-card:hover h2{
+    padding-top: 5px;
+    color: #fff;
+}
+
+.column-two-card:hover p{
+    display: block;
+}
+
+.index-video{
+    width: 80%;
+    margin-left: 120px;
+}
+
+.index-video video{
+    vertical-align: top;
+}
+
+.column-four-img{
+    float: left;
+    width: 33%;
+    height: 222px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    overflow: hidden;
+}
+
+.column-four-img img{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    transition: transform .2s linear;
+}
+
+.column-four-img img:hover{
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+.column-four{
+    margin-bottom: 40px;
+}
