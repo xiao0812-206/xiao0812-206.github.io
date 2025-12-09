@@ -1,0 +1,338 @@
+/* 清除所有元素的默认内边距和外边距，并设置盒模型为 border-box */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 统一设置所有 a 链接的字体颜色和去除下划线 */
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* 去除所有 <li> 列表项的默认样式 */
+li {
+    list-style: none;
+}
+
+/* 设置段落文本的首行缩进 */
+p {
+    text-indent: 2em;
+}
+
+/* .box 类宽度设置为100% */
+.box {
+    width: 100%;
+}
+
+/* .w 类设置固定宽度，并且居中对齐 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* .x 类设置宽度为1200px，并左侧设置偏移 */
+.x{
+    width: 1200px;
+    margin: 0 0 0 330px;
+}
+
+/* 头部区域样式，设置固定高度及内边距 */
+.head {
+    width: 100%;
+    height: 100px;
+    padding: 10px 15px;
+}
+
+/* 头部图片浮动左侧 */
+.head img {
+    float: left;
+}
+
+/* 搜索框浮动至右侧，并设置间距 */
+.head .search {
+    float: right;
+    margin-top: 20px;
+}
+
+/* 搜索框中的输入框样式 */
+.search input {
+    padding-left: 10px;
+    width: 240px;
+    height: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+/* 搜索框按钮样式 */
+.search button {
+    width: 50px;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #007acc;
+}
+
+/* 导航栏样式 */
+.nav {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #007acc;
+}
+
+/* 导航栏每个 li 项样式 */
+.nav li {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+/* 导航栏文字颜色设置 */
+.nav li a {
+    color: #fff;
+}
+
+/* 导航栏项 hover 状态 */
+.nav li:hover {
+    background-color: #fff;
+}
+
+/* 导航栏项 hover 状态下文字颜色变化 */
+.nav li:hover a {
+    color: #007acc;
+}
+
+/* 横幅图片设置 */
+.banner img {
+    display: block;
+    width: 100%;
+}
+
+/* 主要内容区样式 */
+.main {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* m1 样式与 main 类相同 */
+.m1 {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* 旅游信息展示区 */
+.xczx,
+.sn {
+    float: left;
+    padding: 15px;
+    width: 860px;
+}
+
+/* 标题样式，统一设置边框 */
+.xczx h2,
+.sn h2 {
+    line-height: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* 标题右对齐 */
+.xczx h2 a {
+    float: right;
+    font-size: 16px;
+}
+
+/* 每个列表项样式 */
+.xczx li {
+    float: left;
+    width: 263px;
+    margin-right: 20px;
+}
+
+/* 每3个项间距去除右侧间距 */
+.xczx li:nth-child(3n) {
+    margin-right: 0;
+}
+
+/* 列表的宽度和间距 */
+.xczx ul,
+.sn ul {
+    width: 100%;
+    margin: 20px auto;
+}
+
+/* 列表项图片设置 */
+.xczx li img {
+    display: block;
+    width: 100%;
+    height: 150px;
+}
+
+/* 列表项文本样式 */
+.xczx li {
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 列表项 hover 状态 */
+.xczx li:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #007ACC;
+}
+
+/* 新闻区域样式 */
+.news {
+    float: right;
+    padding: 15px;
+    width: 320px;
+}
+
+/* 新闻标题 */
+.news h2 {
+    line-height: 50px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+/* 新闻列表样式 */
+.news ul {
+    margin-top: 20px;
+}
+
+/* 新闻列表项样式 */
+.news li {
+    font-size: 14px;
+    line-height: 30px;
+    border-bottom: 1px dashed #ccc;
+}
+
+/* 新闻列表项 hover 状态 */
+.news li:hover {
+    color: #007ACC;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* 页脚样式 */
+.footer {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background-color: #007acc;
+}
+
+/* sn 类中的 li 项样式 */
+.sn li {
+    margin-bottom: 15px;
+    padding: 15px;
+    width: 100%;
+    height: 150px;
+    background-color: #eee;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+/* sn 类中的 li 项 hover 状态 */
+.sn li:hover {
+    transform: translate(10px, -10px);
+}
+
+/* sn 中 li 的 b 标签样式 */
+.sn li b {
+    line-height: 40px;
+    font-size: 20px;
+}
+
+/* sn 中 li 的 p 标签样式 */
+.sn li p {
+    text-indent: 0;
+    line-height: 30px;
+}
+
+/* sn 中 li 的 span 标签浮动至右侧 */
+.sn li span {
+    float: right;
+}
+
+/* sz 类的样式 */
+.sz {
+    padding: 30px 0;
+}
+
+/* sz 中的 h2 标题样式 */
+.sz h2 {
+    text-align: center;
+    line-height: 60px;
+}
+
+/* sz 中的段落样式 */
+.sz p {
+    line-height: 30px;
+}
+
+/* sz 中的图片样式 */
+.sz img {
+    display: block;
+    width: 600px;
+    margin: 10px auto;
+}
+
+/* yczx 和 sn 类的样式 */
+.yczx,
+.sn {
+    float: center;
+    padding: 15px;
+    width: 860px;
+}
+
+/* yczx 类中 h2 标签中的 a 样式 */
+.yczx h2 a {
+    float: right;
+    font-size: 16px;
+}
+
+/* yczx 中 li 项样式 */
+.yczx li {
+    float: left;
+    width: 263px;
+    margin-right: 20px;
+}
+
+/* 每3个项间距去除右侧间距 */
+.yczx li:nth-child(3n) {
+    margin-right: 20;
+}
+
+/* yczx 中 ul 列表样式 */
+.yczx ul,
+.sn ul {
+    width: 100%;
+    margin: 20px auto;
+}
+
+/* yczx 中 li 项图片样式 */
+.yczx li img {
+    display: block;
+    width: 100%;
+    height: 150px;
+}
+
+/* yczx 中 li 项文本样式 */
+.yczx li {
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* yczx 中 li 项 hover 状态 */
+.yczx li:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #007ACC;
+}

@@ -1,0 +1,62 @@
+/* 清除所有元素的默认内外边距 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 设置整个页面的背景色和字体 */
+body {
+    background-color: #efefef;
+    font-family: sans-serif;
+}
+
+/* 设置内容框的宽度、背景颜色、阴影以及居中定位 */
+.content-box {
+    width: 500px; /* 设置内容框的宽度 */
+    background-color: #fff; /* 设置背景色为白色 */
+    box-shadow: 0 0 20px 0 #999; /* 设置阴影效果 */
+    top: 50%; /* 垂直方向上居中 */
+    left: 50%; /* 水平方向上居中 */
+    transform: translate(-50%, -50%); /* 将框从原位置偏移50%宽度和高度以完成完全居中 */
+    position: absolute; /* 设置绝对定位 */
+}
+
+/* 设置表单的外边距 */
+form {
+    margin: 35px; /* 设置表单的外边距 */
+}
+
+/* 输入框样式，设置宽度、高度、内边距、边框等 */
+.input-field {
+    width: 400px; /* 设置输入框的宽度 */
+    height: 40px; /* 设置输入框的高度 */
+    margin-top: 20px; /* 设置输入框与上方内容的间距 */
+    padding-left: 10px; /* 设置左内边距 */
+    padding-right: 10px; /* 设置右内边距 */
+    border: 1px solid #777; /* 设置边框颜色 */
+    border-radius: 14px; /* 设置圆角边框 */
+    outline: none; /* 去掉输入框聚焦时的外边框 */
+}
+
+/* 文本区域框的样式 */
+.textarea-field {
+    height: 150px; /* 设置文本区域框的高度 */
+    padding-top: 10px; /* 设置顶部内边距 */
+}
+
+/* 按钮的样式，设置边框、背景色、字体等 */
+.btn {
+    border-radius: 20px; /* 设置圆角按钮 */
+    color: #fff; /* 设置字体颜色为白色 */
+    margin-top: 18px; /* 设置按钮与上方内容的间距 */
+    padding: 10px; /* 设置按钮内边距 */
+    background-color: #47c35a; /* 设置背景色 */
+    font-size: 12px; /* 设置字体大小 */
+    border: none; /* 去掉按钮边框 */
+    cursor: pointer; /* 设置鼠标悬停时显示为手形光标 */
+}
+
+/* 去掉链接的下划线 */
+a {
+    text-decoration: none; /* 去除链接的下划线 */
+}

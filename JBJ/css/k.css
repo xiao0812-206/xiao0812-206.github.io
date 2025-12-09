@@ -1,0 +1,10 @@
+/* 选择所有带有 class 为 "a" 的元素 */
+.a {
+    text-align: center; /* 将文本居中对齐 */
+    font-size: 50px;    /* 设置字体大小为 50px */
+}
+
+/* 选择所有的 a 链接元素 */
+a {
+    text-decoration: none; /* 移除链接的默认下划线样式 */
+}
