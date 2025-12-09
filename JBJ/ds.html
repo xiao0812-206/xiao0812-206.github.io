@@ -1,0 +1,31 @@
+<!DOCTYPE html> <!-- 定义文档类型为HTML5 -->
+<html>
+	<head>
+		<meta charset="utf-8"> <!-- 设置字符编码为UTF-8 -->
+		<title>注册</title> <!-- 网页标题，显示在浏览器标签页 -->
+		<link rel="stylesheet" href="联系我们.css"> <!-- 引入外部CSS样式表 -->
+	</head>
+	<body>
+		<div class="content-box"> <!-- 创建一个包裹表单的容器 -->
+			 <form> <!-- 创建一个表单 -->
+				 <input type="text" class="input-field" placeholder="名称"> <!-- 输入框，用于输入名称 -->
+				 <input type="text" class="input-field" placeholder="密码"> <!-- 输入框，用于输入密码 -->
+				 <input type="email" class="input-field" placeholder="邮箱"> <!-- 输入框，用于输入邮箱，类型为email -->
+				 <input type="text" class="input-field" placeholder="主题"> <!-- 输入框，用于输入主题 -->
+				 <p>请选择班级: <!-- 班级选择部分 -->
+				 <select name="banji"> <!-- 下拉菜单，用于选择班级 -->
+				 <option value="计86">计86</option> <!-- 可选项：计86 -->
+				 <option value="计87">计87</option> <!-- 可选项：计87 -->
+				 <option value="计88" selected="selected">计88</option> <!-- 可选项：计88，默认选中 -->
+				 <option value="计89">计89</option> <!-- 可选项：计89 -->
+				 <option value="计90">计90</option> <!-- 可选项：计90 -->
+				 </select>
+				 </p>
+				 请选择出生日期: <!-- 出生日期选择部分 -->
+				 <input type="date"> <!-- 日期选择器，用于选择出生日期 -->
+				 <textarea class="input-field textarea-field"></textarea> <!-- 多行文本框，用于输入更多内容 -->
+				 <button type="button" class="btn"><a href="index.html">回到首页</a></button> <!-- 按钮，点击后跳转到首页 -->
+			 </form>
+		</div>
+	</body>
+</html>
